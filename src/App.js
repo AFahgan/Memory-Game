@@ -1,14 +1,46 @@
+import MemoryCard from './components/MemoryCard';
 
 import Card from './components/card'
+
+
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="cards">
 
-      <Card/>
+    
 
+    <div className='card'>
+      <MemoryCard  />
+      <MemoryCard  />
+      <MemoryCard  />
+      <Card  />
+     
+      </div>
+
+      <div className='card'>
+      <MemoryCard  />
+      <MemoryCard  />
+      <MemoryCard  />
+      <Card  />
+     
+      </div>
+      <div className='card'>
+      <MemoryCard  />
+      <MemoryCard  />
+      <MemoryCard  />
+      <Card  />
+     
+      </div>
+      <div className='card'>
+      <MemoryCard  />
+      <MemoryCard  />
+      <MemoryCard  />
+      <Card  />
+     
+      </div>
     </div>
   );
 }
