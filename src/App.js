@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import StartGame from './components/StartGame';
 
 function App() {
   return (
     <div className="App">
-    <h1>Hi</h1>
+    <StartGame />
     </div>
   );
 }
