@@ -1,47 +1,11 @@
-import MemoryCard from './components/MemoryCard';
-
-import Card from './components/card'
-
 
 
 import './App.css';
+import StratGame from './components/StarGame';
 
 function App() {
   return (
-    <div className="cards">
-
-    
-
-    <div className='card'>
-      <MemoryCard  />
-      <MemoryCard  />
-      <MemoryCard  />
-      <Card  />
-     
-      </div>
-
-      <div className='card'>
-      <MemoryCard  />
-      <MemoryCard  />
-      <MemoryCard  />
-      <Card  />
-     
-      </div>
-      <div className='card'>
-      <MemoryCard  />
-      <MemoryCard  />
-      <MemoryCard  />
-      <Card  />
-     
-      </div>
-      <div className='card'>
-      <MemoryCard  />
-      <MemoryCard  />
-      <MemoryCard  />
-      <Card  />
-     
-      </div>
-    </div>
+    <StratGame />
   );
 }
 
