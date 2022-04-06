@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactCardFlip from "react-card-flip";
-
+const backgroundImage = "https://cs.csub.edu/~arodriguez/cs2680/FinalProject/images/pair6.jpg";
 class Card extends Component {
   state = {
     isFlipped: false,
@@ -23,7 +23,7 @@ class Card extends Component {
             backgroundRepeat: "no-repeat",
 
             width: "100px",
-            height: "100px",
+            height: "140px",
             marginLeft: "4px",
           }}
           key="front"
@@ -32,11 +32,14 @@ class Card extends Component {
         <div
           style={{
             backgroundImage:
-              "url(https://pbs.twimg.com/profile_images/1348261726156939265/2Ahv0LjP_400x400.jpg)",
+           `Url(${backgroundImage})`,
             backgroundSize: "100% 100%",
             width: "100px",
-            height: "100px",
+            height: "140px",
+            borderRadius:'10px',
             marginLeft: "8px",
+         
+
           }}
           key="back"
           onClick={this.handleClick}

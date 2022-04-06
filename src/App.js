@@ -10,6 +10,37 @@ function App() {
   return (
     <div className="cards">
 
+    
+
+    <div className='card'>
+      <MemoryCard  />
+      <MemoryCard  />
+      <MemoryCard  />
+      <Card  />
+     
+      </div>
+
+      <div className='card'>
+      <MemoryCard  />
+      <MemoryCard  />
+      <MemoryCard  />
+      <Card  />
+     
+      </div>
+      <div className='card'>
+      <MemoryCard  />
+      <MemoryCard  />
+      <MemoryCard  />
+      <Card  />
+     
+      </div>
+      <div className='card'>
+      <MemoryCard  />
+      <MemoryCard  />
+      <MemoryCard  />
+      <Card  />
+     
+      </div>
     </div>
   );
 }

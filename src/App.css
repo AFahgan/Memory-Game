@@ -24,17 +24,22 @@ body {
   padding: 6px 0 6px 0;
   margin-left: 5px;
 
+
 }
 .memoryCard{
-  height: 100px;
+  height: 140px;
   width: 100px;
   border: 1.5px solid transparent;
   transition: all .3s ease-in;
   margin-bottom:5px;
+  border-radius: 10px;
+
 }
 .memoryCard.front:hover{
   cursor: pointer;
-  border: 1.5px solid red;
+  border: 1.5px solid lightblue;
+  border-radius: 10px;
+
 }
 
 .memoryCard.back{
@@ -45,4 +50,6 @@ body {
   font-weight: bold;
   text-align: center;
   line-height: 80px;
+  border-radius: 10px;
+
 }
