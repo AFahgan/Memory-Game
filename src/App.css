@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background: #1B1B1B;
+ align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.card{
+  flex: 1 0 calc(21% - 1em);
+  padding: 6px 0 6px 0;
+  margin-left: 5px;
+
+}
+.memoryCard{
+  height: 100px;
+  width: 100px;
+  border: 1.5px solid transparent;
+  transition: all .3s ease-in;
+  margin-bottom:5px;
+}
+.memoryCard.front:hover{
+  cursor: pointer;
+  border: 1.5px solid red;
+}
+
+.memoryCard.back{
+  background: #fff;
+  border: 1.5px solid #fff;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+}

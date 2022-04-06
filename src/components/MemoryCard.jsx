@@ -1,34 +1,35 @@
 import React, { Component } from "react";
 import ReactCardFlip from "react-card-flip";
 class MemoryCard extends Component {
-
-  flipCardHandler = (element) => {
-    if (this.state.found || this.state.flipped) return;
-    this.state.flip(element.target.id);
+  flipCardHandler = (ele) => {
+    if (this.props.found || this.props.flipped) return;
+    this.props.flip(ele.target.id);
   };
 
   render() {
-    const { id, imgLink, flipped } = this.state;
+    const { id, imgUrl, flipped } = this.props;
     return (
       <div className="card">
         <ReactCardFlip isFlipped={flipped} flipDirection="horizontal">
           <div
             id={id}
             className="memoryCard front"
-            onClick={this.flipCardHandler}
-            style={{ background: "#35BFFE" }}
+            onClick={this.flipCardHandlerHandler}
+            style={{
+              backgroundImage: `url(https://s3.amazonaws.com/images.penguinmagic.com/images/products/original/8007b.jpg)`,
+              backgroundSize: '100% 100%',
+              backgroundRepeat: 'no-repeat',
+            }}
             key="front"
           />
           <div
-            className="memoryCard"
+            className="memoryCard back"
             onClick={this.flipCardHandler}
             key="back"
             style={{
-              backgroundImage: `url(${imgLink})`,
-              backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                
+              backgroundImage: `url(${imgUrl})`,
+              backgroundSize: '100% 100%',
+              backgroundRepeat: 'no-repeat',
             }}
           ></div>
         </ReactCardFlip>
