@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import GameBoard from "./components/GameBoard";
 import NewGame from "./components/NewGame";
 import PlayAgain from './components/PlayAgain';
-import {images} from './assets/index';
 const createId = () => {
   return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 }
