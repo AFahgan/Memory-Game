@@ -31,6 +31,7 @@ class MemoryCard extends Component {
               backgroundImage: `url(${imgUrl})`,
               backgroundSize: '100% 100%',
               backgroundRepeat: 'no-repeat',
+              border: found ? '0.5px solid green' : "none",
               
             }}
           ></div>
