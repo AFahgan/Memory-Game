@@ -1,33 +1,115 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.message{
+  color: #fff;
+}
+h2{
+  padding: 0;
+  margin: 0;
+}
+.board-container{
+  width: 60%;
+  margin: 50px auto;
+  text-align: left;
+}
+.memoryCard{
+  height: 80px;
+  width: 120px;
+  border: 1.5px solid transparent;
+  transition: all .3s ease-in;
+}
+.memoryCard.front:hover{
+  cursor: pointer;
+  border: 1.5px solid #35bffe;
+}
+
+.flex-container {
+  display: flex;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 0 calc(21% - 1em);
+  padding: 6px 0 6px 0;
+  margin-left: 5px;
+}
+.memoryCard {
+  height: 140px;
+  border: 1.5px solid transparent;
+  transition: all 0.3s ease-in;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+.memoryCard.front:hover {
+  cursor: pointer;
+  border: 1.5px solid lightblue;
+  border-radius: 10px;
+}
+
+.memoryCard.back {
+  background: rgb(255, 255, 255);
+  border: 1.5px solid #fff;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 10px;
+}
+
+.btn-play {
+  border: 1.5px solid transparent;
+  width: 209px;
+  height: 70px;
+  background: #35bffe;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn {
+  border: 1.5px solid transparent;
+  width: 209px;
+  height: 70px;
+  background: #35bffe;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu{
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 450px) {
+  .board-container{
+    width: 100%;
+    margin: 50px auto;
   }
-  to {
-    transform: rotate(360deg);
+  .flex-container{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
   }
+ 
 }
