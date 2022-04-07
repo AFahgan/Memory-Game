@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import GameBoard from "./components/GameBoard";
 import NewGame from "./components/NewGame";
@@ -29,7 +30,7 @@ class App extends Component {
       let id = createId();
       let id2 = createId();
       let rand = Math.floor(Math.random() * 10) + 1;
-      console.log(rand);
+      
       const card1 = {
         id: id,
         matchesId: id2,
@@ -56,6 +57,7 @@ class App extends Component {
   shuffleCards = (a) => {
     for (let i = a.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
+      console.log(j);
       [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
